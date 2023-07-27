@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "name": "Eugenia Rodriguez", 
+        "email": "maru90@live.com",
+         "password": "1234abc"
+    },
+    {    "id": 2,
+         "name": "Micaela",
+         "email": "micagui@hotmail.com",
+         "password": "abc123"
+    }
+    ]

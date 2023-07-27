@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Vela de coco",
+        "price": 1500,
+        "description": "Animalfriendly",
+        "image": "image-default.png"
+    },
+    {
+        "id": 2,
+        "name": "Vela de vainilla",
+        "price": 1100,
+        "description": "Animalfriendly",
+        "image": "image-default.png"
+    },
+    {
+        "id": 3,
+        "name": "Vela de Chocolate",
+        "price": 1800,
+        "description": "NotAnimalfriendly",
+        "image": "image-default.png"
+    },
+    {
+        "id": 4,
+        "name": "Vela de Manzana",
+        "price": 2000,
+        "description": "NotAnimalfriendly",
+        "image": "image-default.png"
+    },
+    {
+        "id": 5,
+        "name": "Vela de Canela",
+        "price": 1000,
+        "description": "'NotAnimalfriendly",
+        "image": "image-default.png"
+    }
+]
