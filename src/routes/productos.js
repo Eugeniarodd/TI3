@@ -8,4 +8,7 @@ router.get ('/', controller.all);
 /*Ruta de detalle de producto*/
 router.get ('/:id', controller.one);
 
+/*Ruta de nuevo producto */
+router.post ('/crear', controller.new);
+
 module.exports = router;

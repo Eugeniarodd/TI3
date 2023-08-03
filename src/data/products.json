@@ -33,5 +33,19 @@
         "price": 1000,
         "description": "'NotAnimalfriendly",
         "image": "image-default.png"
+    },
+    {
+        "id": 6,
+        "name": "Vela de dulce de leche",
+        "price": 2800,
+        "description": "Animalfriendly",
+        "image": "image-default.png"
+    },
+    {
+        "id": 7,
+        "name": "Vela de Mango",
+        "price": 2300,
+        "description": "Animalfriendly",
+        "image": "image-default.png"
     }
 ]
