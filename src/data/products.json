@@ -1,51 +1,64 @@
 [
     {
-        "id": 1,
         "name": "Vela de coco",
         "price": 1500,
         "description": "Animalfriendly",
-        "image": "image-default.png"
+        "image": "http://localhost:3000/images/vela4.jpg"
     },
     {
-        "id": 2,
-        "name": "Vela de vainilla",
+                "name": "Vela de vainilla",
         "price": 1100,
         "description": "Animalfriendly",
-        "image": "image-default.png"
+        "image": "http://localhost:3000/images/vela5.jpg"
     },
     {
-        "id": 3,
         "name": "Vela de Chocolate",
         "price": 1800,
         "description": "NotAnimalfriendly",
-        "image": "image-default.png"
+        "image": "http://localhost:3000/images/vela2.jpg"
     },
     {
-        "id": 4,
-        "name": "Vela de Manzana",
+        "name": "Vela de Cafe",
         "price": 2000,
         "description": "NotAnimalfriendly",
-        "image": "image-default.png"
+        "image": "http://localhost:3000/images/vela1.jpg"
     },
     {
-        "id": 5,
-        "name": "Vela de Canela",
+        "name": "Aceite de Jazmin",
         "price": 1000,
         "description": "'NotAnimalfriendly",
-        "image": "image-default.png"
+        "image": "http://localhost:3000/images/Aceite1.jpg"
     },
     {
-        "id": 6,
-        "name": "Vela de dulce de leche",
+        "name": "Aceite de Magnolia",
         "price": 2800,
         "description": "Animalfriendly",
-        "image": "image-default.png"
+        "image": "http://localhost:3000/images/Aceite2.jpg"
     },
     {
-        "id": 7,
-        "name": "Vela de Mango",
+        "name": "Difusor de Rosas",
         "price": 2300,
         "description": "Animalfriendly",
-        "image": "image-default.png"
+        "image": "http://localhost:3000/images/difusor1.jpg"
+    },
+    {
+        "name": "Aceite de Nuez",
+        "price": "2000",
+        "description": "Animalfriendly"
+    },
+    {
+        "name": "Aceite de Nuez",
+        "price": "2000",
+        "description": "Animalfriendly"
+    },
+    {
+        "name": "Vela de soja de naranja",
+        "price": "3500",
+        "description": "Animalfriendly"
+    },
+    {
+        "name": "Vela de soja de naranja",
+        "price": "3500",
+        "description": "Animalfriendly"
     }
 ]

@@ -24,7 +24,7 @@ const controller = {
         product.name = req.body.name;
         product.price = req.body.price;
         product.description = req.body.description;
-        product.image = req.body.image;
+        product.image = req.file.filename;
 
         products.push(product);
 
