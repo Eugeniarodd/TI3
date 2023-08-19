@@ -1,40 +1,42 @@
-const fs = require ('fs');
-const path = require ('path');
-
-const rutaAlJson= path.resolve (__dirname, '../data/products.json');
-const dataJSON = fs.readFileSync(rutaAlJson,{encoding: 'utf-8'})
-const products = JSON.parse (dataJSON);
+const Product = require ('../database/models/Product');
 
 
 const controller = {
-   all: (req, res) => {
-    res.json(products);
+   all: async (req, res) => {
+    const products = await Product.find ({});
+    res.status(200).json(products);
    },
-   one: function (req, res) {
-    let id = +req.params.id;
-    let product = products.find(product => product.id == id)
+   update: async (req, res) => {
+   const product = await Product.findByIdAndUpdate(req.params.id, req.body);
+   return res.status(200).json(product);
+   },
+   one: async (req, res) => {
+    const product = await Product.findById ({_id: req.params.id})
+    res.json(product);
+},  
+    search: async (req, res) => {
+    const product = await Product.find ({name: req.query.name})
     res.json(product);
 },
-    new: (req, res) => {
-        let product = {};
-        if (!req.body.name){
-            return res.json ({mgs: 'el campo name es requerido'});
+
+    create: async (req, res) => {
+        try{
+        let product = {
+            name : req.body.name,
+            price : req.body.price,
+            description : req.body.description,
+            image : req.file.filename,
+         }
+         const productDatabase = await Product.create(product);
+         res.status(201).json(productDatabase);
+
+        } catch(error) {
+            if (error.errors.name){
+                return res.status(400).json({message: 'Falta el campo name'});
+            }
+            res.status(500).json({message: 'internal server error'});
         }
-        product.id = products.length + 1;
-        product.name = req.body.name;
-        product.price = req.body.price;
-        product.description = req.body.description;
-        product.image = req.file.filename;
-
-        products.push(product);
-
-let productsJson = JSON.stringify(products, null, 4)
-fs.writeFileSync(rutaAlJson, productsJson, {endcoding: 'utf-8'})
-
-res.status(201).json(product);
-
-console.log (productsJson)
-    res.json(products);
+     
 }
 }
 
